@@ -4627,7 +4627,7 @@ static bool tcp_try_coalesce(struct sock *sk,
 
 	*fragstolen = false;
 
-	/* Its possible this segment overlaps with prior segment in queue */
+	/* It's possible this segment overlaps with prior segment in queue */
 	if (TCP_SKB_CB(from)->seq != TCP_SKB_CB(to)->end_seq)
 		return false;
 
@@ -5508,7 +5508,7 @@ static inline void tcp_ack_snd_check(struct sock *sk)
 
 /*
  *	This routine is only called when we have urgent data
- *	signaled. Its the 'slow' part of tcp_urg. It could be
+ *	signaled. It's the 'slow' part of tcp_urg. It could be
  *	moved inline now as tcp_urg is only called from one
  *	place. We handle URGent data wrong. We have to - as
  *	BSD still doesn't use the correction from RFC961.

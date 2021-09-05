@@ -1393,7 +1393,7 @@ static bool tcp_v4_inbound_md5_hash(const struct sock *sk,
 	 * We have 3 drop cases:
 	 * o No MD5 hash and one expected.
 	 * o MD5 hash and we're not expecting one.
-	 * o MD5 hash and its wrong.
+	 * o MD5 hash and it's wrong.
 	 */
 	const __u8 *hash_location = NULL;
 	struct tcp_md5sig_key *hash_expected;
